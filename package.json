@@ -1,0 +1,13 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "description": "Your project description",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss -i ./CSS/input.css -o ./CSS/style.css --minify",
+    "watch-css": "tailwindcss -i ./CSS/input.css -o ./CSS/style.css --watch"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.16"
+  }
+}
