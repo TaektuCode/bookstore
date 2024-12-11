@@ -1,157 +1,244 @@
 let books = [
   {
-    name: "Die Geheimnisse des Ozeans",
-    author: "Clara Meer",
-    likes: 1250,
+    name: "Steve Jobs: A Biograph",
+    author: "Walter Isaacson",
+    likes: 24711,
     liked: true,
-    price: 19.99,
-    publishedYear: 2018,
-    genre: "Fantasy",
+    price: 39.5,
+    publishedYear: 2011,
+    genre: "Biography",
     comments: [
       {
-        name: "Leser123",
+        name: "AppleFan",
         comment:
-          "Ein faszinierendes Abenteuerbuch, das mich von der ersten Seite an gefesselt hat.",
+          "An incredible story about a man who changed the world of technology forever.",
       },
       {
-        name: "Bookworm84",
+        name: "CreativeMind",
         comment:
-          "Eine romantische Geschichte, die mein Herz berührt und mich zum Nachdenken gebracht hat.",
+          "This book is an inspiring yet honest portrayal of Steve Jobs’ genius and flaws.",
       },
       {
-        name: "FantasyFanatic",
+        name: "Innovator123",
         comment:
-          "Eine spannende Fantasiewelt, die ich nur schwer aus der Hand legen konnte.",
+          "Walter Isaacson captures the relentless drive and creative vision of Jobs perfectly.",
       },
       {
-        name: "SciFiGuru",
+        name: "TechGuru",
         comment:
-          "Ein cleverer Science-Fiction-Roman mit interessanten Zeitreise-Konzepten und Charakteren.",
+          "A must-read for anyone interested in innovation and the history of Apple.",
       },
       {
-        name: "NovelLover",
+        name: "BalancedReader",
         comment:
-          "Ein Buch, das voller magischer Überraschungen steckt und mich begeistert hat.",
+          "The book shows Jobs’ brilliance but also doesn’t shy away from his difficult personality.",
+      },
+      {
+        name: "VisionaryFan",
+        comment:
+          "Jobs’ unwavering belief in his mission is both inspiring and a little terrifying.",
       },
     ],
   },
   {
-    name: "Der vergessene Pfad",
-    author: "Maximilian Schwarz",
+    name: "Elon Musk: by Walter Isaacson",
+    author: "Walter Isaacson",
     likes: 980,
     liked: false,
-    price: 14.5,
-    publishedYear: 2021,
-    genre: "Fantasy",
-    comments: [],
+    price: 22.99,
+    publishedYear: 2023,
+    genre: "Biography",
+    comments: [
+      {
+        name: "RocketManiac",
+        comment:
+          "A fascinating look into the mind of a genius and the chaos he thrives in.",
+      },
+      {
+        name: "TechEnthusiast42",
+        comment:
+          "This book captures Musk’s relentless drive and unorthodox approach to innovation.",
+      },
+      {
+        name: "AstroFan",
+        comment:
+          "Isaacson does an excellent job balancing Musk’s brilliance with his flaws.",
+      },
+      {
+        name: "ElectricDreamer",
+        comment:
+          "A gripping biography that showcases the highs and lows of Musk’s journey.",
+      },
+      {
+        name: "SpaceLover123",
+        comment:
+          "Loved the detailed exploration of SpaceX and Tesla’s rise to global dominance.",
+      },
+      {
+        name: "SciTechReader",
+        comment:
+          "This book is a deep dive into Musk's world, but at times it feels overly sympathetic.",
+      },
+    ],
   },
   {
-    name: "Die Farben des Himmels",
-    author: "Laura Blau",
+    name: "The Great Nowitzki: Basketball and the Meaning of Life",
+    author: "Thomas Pletzinger",
     likes: 1520,
     liked: true,
-    price: 22.95,
+    price: 11.56,
+    publishedYear: 2022,
+    genre: "Biography",
+    comments: [
+      {
+        name: "HoopsFan88",
+        comment:
+          "A brilliant look at Dirk Nowitzki's journey both on and off the court. A must-read for basketball fans!",
+      },
+      {
+        name: "BasketballLover",
+        comment:
+          "This book dives deep into Dirk's dedication and what it takes to become one of the greatest players of all time.",
+      },
+      {
+        name: "SportsHistorian",
+        comment:
+          "Geschwindner beautifully captures the essence of Dirk’s career and his impact on the game and culture.",
+      },
+      {
+        name: "MavsFanForever",
+        comment:
+          "An inspiring and heartfelt story about a true legend of the game. Loved every page!",
+      },
+      {
+        name: "LifeInSports",
+        comment:
+          "A wonderful mix of basketball insights and life lessons from one of the sport’s most humble stars.",
+      },
+    ],
+  },
+  {
+    name: "The Mamba Mentality: How I Play",
+    author: "Kobe Bryant, Andrew D.Bernstein",
+    likes: 28407,
+    liked: true,
+    price: 29.99,
     publishedYear: 2019,
-    genre: "Romantik",
+    genre: "Autobiography",
     comments: [
       {
-        name: "LeserPeter",
+        name: "KobeFan24",
         comment:
-          "Die Handlung war fesselnd und die Charaktere unglaublich lebendig dargestellt.",
+          "A fascinating dive into Kobe's mindset and approach to the game. Truly inspiring for anyone striving for greatness.",
       },
       {
-        name: "BookLover21",
+        name: "BasketballGeek",
         comment:
-          "Ein romantisches Meisterwerk, das mich tief berührt und bewegt hat.",
+          "Kobe's insights into his training, focus, and mentality are priceless for any aspiring athlete.",
       },
       {
-        name: "FantasyNerd",
+        name: "MambaForever",
         comment:
-          "Fantastische Welten und epische Abenteuer - genau mein Geschmack!",
+          "This book captures the relentless drive of Kobe Bryant in a way that’s both motivating and humbling.",
       },
       {
-        name: "SciFiEnthusiast",
+        name: "HoopsJunkie",
         comment:
-          "Die Zeitreise-Elemente waren genial und haben die Story spannend gemacht.",
+          "A deep look at the mentality behind Kobe’s success—this book is not just for basketball fans but anyone chasing excellence.",
       },
       {
-        name: "ReadingAddict",
+        name: "EliteAthlete",
         comment:
-          "Ein unvergessliches Buch, das mich auf eine magische Reise mitgenommen hat.",
+          "Kobe’s Mamba Mentality is a must-read for those who want to push their limits and achieve the impossible.",
       },
     ],
   },
   {
-    name: "Das Rätsel der Zeit",
-    author: "Alexander Weiss",
-    likes: 750,
-    liked: false,
-    price: 18.0,
-    publishedYear: 2020,
-    genre: "Science-Fiction",
-    comments: [
-      {
-        name: "BuchKenner",
-        comment:
-          "Ein spannendes Abenteuer, das mich von Anfang an mitgerissen hat.",
-      },
-      {
-        name: "LeseWurm",
-        comment:
-          "Die Liebesgeschichte war herzergreifend und wunderschön geschrieben.",
-      },
-    ],
-  },
-  {
-    name: "Der letzte Wächter",
-    author: "Sabine Grün",
+    name: "Atomic Habits",
+    author: "James Clear",
     likes: 1300,
     liked: true,
-    price: 16.75,
-    publishedYear: 2017,
-    genre: "Fantasy",
-    comments: [],
+    price: 20.35,
+    publishedYear: 2019,
+    genre: "Personal Development",
+    comments: [
+      {
+        name: "HabitBuilder",
+        comment:
+          "This book is a game-changer! James Clear’s approach to building better habits with small changes is truly transformative.",
+      },
+      {
+        name: "GrowthSeeker",
+        comment:
+          "Atomic Habits is full of practical advice that’s easy to apply. It’s the perfect guide for anyone looking to make lasting changes.",
+      },
+      {
+        name: "ProductivityFan",
+        comment:
+          "Clear’s ability to break down complex behavioral science into actionable steps is incredible. I’ve already seen results in my daily routine.",
+      },
+      {
+        name: "SelfImprovementJunkie",
+        comment:
+          "This book teaches you how to take control of your habits and ultimately your life. Simple, yet profound!",
+      },
+      {
+        name: "MotivatedMinds",
+        comment:
+          "A must-read for anyone trying to break bad habits and build positive ones. James Clear’s strategies are clear, effective, and easy to follow.",
+      },
+    ],
   },
   {
-    name: "Im Schatten des Mondes",
-    author: "Philipp Silber",
+    name: "World of Warcraft: Rise of the Horde",
+    author: "Christie Golden",
     likes: 890,
     liked: false,
-    price: 12.3,
-    publishedYear: 2022,
-    genre: "Science-Fiction",
+    price: 19.99,
+    publishedYear: 2007,
+    genre: "Fantasy",
     comments: [
       {
-        name: "BücherLiebhaber",
+        name: "WoWFanatic",
         comment:
-          "Eine magische Reise durch eine faszinierende Fantasiewelt, absolut fesselnd.",
+          "A thrilling dive into the rich lore of Warcraft! *Rise of the Horde* gave me a deeper understanding of the Orcs' origins.",
       },
       {
-        name: "Leseratte",
+        name: "FantasyLover",
         comment:
-          "Ein packender Science-Fiction-Roman, der mich zum Nachdenken gebracht hat.",
+          "Christie Golden masterfully brings the *World of Warcraft* universe to life. This book is a must-read for any Warcraft fan.",
+      },
+      {
+        name: "LoreExplorer",
+        comment:
+          "An exciting and emotional journey into the past of the Orcs. I loved learning about their culture and what led to their rise.",
       },
     ],
   },
   {
-    name: "Jenseits der Sterne",
-    author: "Oliver Schwarz",
+    name: "The Lord of the Rings",
+    author: "J.R.R Tolkien",
     likes: 1450,
     liked: true,
-    price: 21.0,
-    publishedYear: 2015,
-    genre: "Science-Fiction",
+    price: 31.5,
+    publishedYear: 2012,
+    genre: "High Fantasy",
     comments: [
       {
-        name: "Leser123",
+        name: "FantasyFan88",
         comment:
-          "Ein fesselndes Abenteuer, das mich von Anfang bis Ende mitgerissen hat.",
+          "An epic masterpiece that set the standard for high fantasy! Tolkien's world-building and storytelling are unparalleled.",
+      },
+      {
+        name: "MiddleEarthLover",
+        comment:
+          "The Lord of the Rings is a timeless classic. Every page is filled with rich lore, unforgettable characters, and thrilling adventures.",
       },
     ],
   },
   {
-    name: "Das verborgene Königreich",
-    author: "Elena Gold",
+    name: "I Am Football: Zlatan Ibrahimovic",
+    author: "Zlatan Ibrahimovic",
     likes: 920,
     liked: false,
     price: 17.5,
@@ -159,35 +246,50 @@ let books = [
     genre: "Fantasy",
     comments: [
       {
-        name: "Bookworm92",
+        name: "FootballFanatic",
         comment:
-          "Ein faszinierendes Buch, das mich von der ersten Seite an gefesselt hat.",
+          "Zlatan's autobiography is as bold and unfiltered as he is. A must-read for anyone who loves the game and his larger-than-life personality.",
+      },
+      {
+        name: "SoccerLover12",
+        comment:
+          "Ibrahimović’s confidence and charisma shine through in this book. His journey from humble beginnings to global football icon is inspiring.",
+      },
+      {
+        name: "GoalScorer",
+        comment:
+          "This is not just an autobiography; it’s a celebration of Zlatan’s incredible achievements, personality, and attitude toward football.",
       },
     ],
   },
   {
-    name: "Liebe in Zeiten des Krieges",
-    author: "Emilia Rot",
+    name: "Zidane",
+    author: "Frédéric Hermel",
     likes: 1800,
     liked: true,
     price: 19.99,
-    publishedYear: 2016,
-    genre: "Romantik",
+    publishedYear: 2021,
+    genre: "Biography",
     comments: [
       {
-        name: "Bibliophile23",
+        name: "FootballFan91",
         comment:
-          "Die Fantasiewelt war so lebendig, ich konnte das Buch kaum aus der Hand legen.",
+          "A beautifully written portrait of one of the greatest players ever. Hermel captures Zidane’s genius both on and off the field.",
       },
       {
-        name: "StorySeeker",
+        name: "SoccerDevotee",
         comment:
-          "Eine unglaublich berührende Liebesgeschichte, die mich tief bewegt hat.",
+          "Frédéric Hermel does an excellent job of exploring Zidane’s career and his influence on football. A must-read for any fan of the sport.",
       },
       {
-        name: "SciFiExplorer",
+        name: "Goalkeeper101",
         comment:
-          "Spannende Zukunftsvisionen und interessante Charaktere machten diesen Roman einzigartig.",
+          "An in-depth look at the iconic French legend. Hermel’s insights into Zidane’s personal and professional life make this a captivating read.",
+      },
+      {
+        name: "FootballHistorian",
+        comment:
+          "This book gives you a deeper understanding of Zidane’s journey, personality, and the quiet intensity that made him a true football legend.",
       },
     ],
   },
