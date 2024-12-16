@@ -15,7 +15,7 @@
     <script src="./JS/script.js"></script>
   </head>
   <body onload="renderBooks()">
-    <div class="flex flex-col w-[100vw] h-[100vh] bg-slate-200">
+    <div class="flex flex-col w-[100%] h-[100vh] bg-slate-200">
       <header
         class="flex justify-between items-center h-[10vh] bg-dark-burgundy px-6"
       >
@@ -38,107 +38,8 @@
       <!-- Content Section -->
       <main
         id="content"
-        class="flex flex-wrap gap-6 justify-center flex-1 bg-light-blush p-5"
-      >
-        <div
-          class="flex flex-col items-center w-[30rem] h-[50rem] bg-soft-cream rounded-3xl border-4 border-dark-burgundy"
-        >
-          <h2
-            class="h-[5rem] w-full py-4 text-center border-b-2 border-dark-burgundy shadow-xl"
-          >
-            Die Geheimnisse des Ozeans
-          </h2>
-          <section
-            class="flex justify-center items-center h-[13rem] w-full border-b-2 border-dark-burgundy"
-          >
-            <div class="p-2 bg-dark-burgundy">
-              <img src="./assets/images/atomic_habits.png" alt="" />
-            </div>
-          </section>
-          <section
-            class="flex flex-col h-[14rem] w-full px-6 border-b-2 border-dark-burgundy py-6"
-          >
-            <div class="flex items-center justify-between">
-              <span class="text-3xl font-bold text-amber-yellow">19.99€</span>
-              <div class="flex items-center">
-                <span class="text-2xl text-midnight-blue">1234</span>
-                <svg class="w-[2.75rem] h-[2.75rem] ml-2 fill-gray-500">
-                  <use xlink:href="./assets/icons/sprite.svg#icon-heart"></use>
-                </svg>
-              </div>
-            </div>
-            <div>
-              <ul class="table w-[65%]">
-                <li class="table-row">
-                  <span class="table-cell border p-2 text-left"
-                    >Row 1, Col 1</span
-                  >
-                  <span class="table-cell border p-2 text-left"
-                    >Row 1, Col 2</span
-                  >
-                </li>
-                <li class="table-row">
-                  <span class="table-cell border p-2 text-center"
-                    >Row 2, Col 1</span
-                  >
-                  <span class="table-cell border p-2 text-center"
-                    >Row 2, Col 2</span
-                  >
-                </li>
-                <li class="table-row">
-                  <span class="table-cell border p-2 text-center"
-                    >Row 3, Col 1</span
-                  >
-                  <span class="table-cell border p-2 text-center"
-                    >Row 3, Col 2</span
-                  >
-                </li>
-              </ul>
-            </div>
-          </section>
-          <section class="flex-1 flex flex-col w-full px-6 py-4">
-            <h3>Kommentare:</h3>
-            <ul class="table w-full flex-1">
-              <li class="table-row">
-                <span class="table-cell w-[30%] border p-2 text-center"
-                  >Row 1, Col 1</span
-                >
-                <span class="table-cell border p-2 text-center"
-                  >Row 1, Col 2</span
-                >
-              </li>
-              <li class="table-row">
-                <span class="table-cell border p-2 text-center"
-                  >Row 2, Col 1</span
-                >
-                <span class="table-cell border p-2 text-center"
-                  >Row 2, Col 2</span
-                >
-              </li>
-              <li class="table-row">
-                <span class="table-cell border p-2 text-center"
-                  >Row 3, Col 1</span
-                >
-                <span class="table-cell border p-2 text-center"
-                  >Row 3, Col 2</span
-                >
-              </li>
-            </ul>
-            <div class="flex">
-              <input
-                class="w-full"
-                type="text"
-                placeholder="Schreibe deinen Kommentar..."
-              />
-              <svg class="w-[2.75rem] h-[2.75rem] ml-2 fill-midnight-blue">
-                <use
-                  xlink:href="./assets/icons/sprite.svg#icon-circle-right"
-                ></use>
-              </svg>
-            </div>
-          </section>
-        </div>
-      </main>
+        class="flex flex-wrap gap-6 justify-center flex-1 bg-light-blush py-5 h-fit"
+      ></main>
       <footer class="h-[10vh] bg-[#2A2A2A] flex justify-center items-center">
         <div class="flex flex-col items-center">
           <p class="text-5xl mb-2">

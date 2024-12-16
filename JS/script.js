@@ -5,7 +5,7 @@ function renderBooks() {
   const booksRef = document.getElementById("content");
   //   booksRef.innerHTML = "";
 
-  books.forEach((book, indexBook) => {
-    booksRef.innerHTML += getBookCardTemplate(book, indexBook);
+  books.forEach((book) => {
+    booksRef.innerHTML += getBookCardTemplate(book);
   });
 }
