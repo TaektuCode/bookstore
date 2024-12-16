@@ -93,7 +93,7 @@ function getBookCardComments(comments) {
         ${commentsHTML}
       </ul>
     </section>
-    <div class="flex w-full px-6 py-4">
+    <div class="flex text-xl w-full px-6 py-4">
       <input class="w-full" type="text" placeholder="Schreibe deinen Kommentar..." />
       <svg class="w-[2.75rem] h-[2.75rem] ml-2 fill-midnight-blue">
         <use xlink:href="./assets/icons/sprite.svg#icon-circle-right"></use>
