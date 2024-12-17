@@ -1,9 +1,9 @@
-function getBookCardTemplate(book) {
+function getBookCardTemplate(book, bookIndex) {
   return `
     <div class="flex flex-col items-center w-[30rem] h-[50rem] bg-soft-cream rounded-3xl border-4 border-dark-burgundy">
       ${getBookCardHeader(book)}
       ${getBookCardInformation(book)}
-      ${getBookCardComments(book.comments)}
+      ${getBookCardComments(book.comments, bookIndex)}
     </div>
   `;
 }
@@ -73,7 +73,7 @@ function getBookCardInformation(book) {
   `;
 }
 
-function getBookCardComments(comments) {
+function getBookCardComments(comments, bookIndex) {
   // Generate HTML for each comment in the array
   const commentsHTML = comments
     .map(
@@ -88,16 +88,28 @@ function getBookCardComments(comments) {
 
   return `
     <h3 class="text-left w-full px-6">Kommentare:</h3>
-    <section class="flex flex-col overflow-auto max-h-[50rem] w-full px-6 py-4">
-      <ul class="table w-full overflow-y-scroll max-h-[20rem]">
+    <section id="commentsContainer${bookIndex}" class="flex flex-col overflow-auto max-h-[50rem] w-full px-6 py-4">
+      <ul id="commentsList${bookIndex}" class="table w-full overflow-y-scroll max-h-[20rem]">
         ${commentsHTML}
       </ul>
     </section>
     <div class="flex text-xl w-full px-6 py-4">
-      <input class="w-full" type="text" placeholder="Schreibe deinen Kommentar..." />
+      <input id="commentInput${bookIndex}" class="w-full pl-3" type="text" placeholder="Schreibe deinen Kommentar..." />
+      <button onclick="addComment(${bookIndex})">
       <svg class="w-[2.75rem] h-[2.75rem] ml-2 fill-midnight-blue">
         <use xlink:href="./assets/icons/sprite.svg#icon-circle-right"></use>
       </svg>
+      </button>
     </div>
+  `;
+}
+
+// Function to generate the HTML for a new comment
+function getNewComment(comment) {
+  return `
+    <li class="table-row h-fit">
+      <span class="table-cell w-[30%] border p-2 text-start">${comment.name}</span>
+      <span class="table-cell border p-2 text-start">${comment.comment}</span>
+    </li>
   `;
 }
