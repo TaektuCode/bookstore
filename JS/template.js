@@ -33,10 +33,12 @@ function getBookCardInformation(book) {
           ${book.price.toFixed(2)}€
         </span>
         <div class="flex items-center">
-          <span class="text-2xl text-midnight-blue">
+          <span class="likes text-2xl text-midnight-blue">
             ${book.likes}
           </span>
-          <svg class="w-[2.75rem] h-[2.75rem] ml-2 fill-gray-500">
+          <svg class="heart ${
+            book.liked ? "liked" : ""
+          } w-[2.75rem] h-[2.75rem] ml-2 fill-gray-500" onclick="toggleLike(this)">
             <use xlink:href="./assets/icons/sprite.svg#icon-heart"></use>
           </svg>
         </div>

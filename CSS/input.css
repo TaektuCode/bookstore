@@ -26,3 +26,13 @@ main {
 li > :nth-child(1) {
   font-weight: bold;
 }
+
+.heart {
+  fill: gray;
+  cursor: pointer;
+  transition: fill 0.3s ease;
+}
+
+.heart.liked {
+  fill: red;
+}

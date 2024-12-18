@@ -1,41 +1,57 @@
-// STORE BOOKS //
-
-// SHOW BOOKS //
+// RENDER BOOKS //
 function renderBooks() {
   const booksRef = document.getElementById("content");
-  //   booksRef.innerHTML = "";
+  if (!booksRef) {
+    console.error(
+      "Error: booksRef not found. Make sure the #content element exists in the DOM.",
+    );
+    return;
+  }
 
-  books.forEach((book, bookIndex) => {
-    booksRef.innerHTML += getBookCardTemplate(book, bookIndex);
+  books.forEach((book, index) => {
+    addBookCard(booksRef, book, index);
   });
 }
 
-// ADD COMMENTS //
+function addBookCard(booksRef, book, index) {
+  booksRef.innerHTML += getBookCardTemplate(book, index);
+}
 
+// ADD COMMENTS //
 function addComment(bookIndex) {
   const inputField = document.getElementById(`commentInput${bookIndex}`);
   const commentText = inputField.value.trim();
 
   if (commentText) {
-    // Create the new comment object
-    const newComment = {
-      name: "GuestUser1",
-      comment: commentText,
-    };
-
-    // Add the new comment to the beginning of the book's comments array
-    books[bookIndex].comments.push(newComment); // .push will add it to the end of the array (unshif to the beginning)
-
-    // Generate the new comment HTML using the function --> from template.js
-    const newCommentHTML = getNewComment(newComment);
-
-    // Append the new comment to the beginning of the comments list
-    const commentsList = document.getElementById(`commentsList${bookIndex}`);
-    commentsList.innerHTML = newCommentHTML + commentsList.innerHTML; // Add the new comment at the top of the list
-
-    // Clear the input field after the comment is added
-    inputField.value = "";
-  } else {
-    alert("Please enter a valid comment.");
+    updateComments(bookIndex, commentText);
+    clearInput(inputField);
   }
+}
+
+function updateComments(bookIndex, commentText) {
+  const newComment = { name: "GuestUser1", comment: commentText };
+  books[bookIndex].comments.push(newComment);
+  prependComment(bookIndex, getNewComment(newComment));
+}
+
+function prependComment(bookIndex, newCommentHTML) {
+  const commentsList = document.getElementById(`commentsList${bookIndex}`);
+  commentsList.innerHTML = newCommentHTML + commentsList.innerHTML;
+}
+
+function clearInput(inputField) {
+  inputField.value = "";
+}
+
+// TOGGLE LIKE //
+function toggleLike(heartElement) {
+  const likesElement = heartElement.parentElement.querySelector(".likes");
+  const likes = parseInt(likesElement.textContent.trim(), 10);
+
+  heartElement.classList.toggle("liked");
+  updateLikes(likesElement, likes, heartElement.classList.contains("liked"));
+}
+
+function updateLikes(likesElement, likes, isLiked) {
+  likesElement.textContent = isLiked ? likes + 1 : likes - 1;
 }
