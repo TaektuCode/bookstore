@@ -2,7 +2,7 @@ let books = [
   {
     name: "Steve Jobs: A Biograph",
     author: "Walter Isaacson",
-    image: "./../assets/images/steve_jobs.png",
+    image: "./assets/images/steve_jobs.png",
     likes: 24711,
     liked: true,
     price: 39.5,
@@ -44,7 +44,7 @@ let books = [
   {
     name: "Elon Musk: by Walter Isaacson",
     author: "Walter Isaacson",
-    image: "./../assets/images/elon_musk.png",
+    image: "./assets/images/elon_musk.png",
     likes: 980,
     liked: false,
     price: 22.99,
@@ -86,7 +86,7 @@ let books = [
   {
     name: "The Great Nowitzki: Basketball and the Meaning of Life",
     author: "Thomas Pletzinger",
-    image: "./../assets/images/nowitzki.png",
+    image: "./assets/images/nowitzki.png",
     likes: 1520,
     liked: true,
     price: 11.56,
@@ -123,7 +123,7 @@ let books = [
   {
     name: "The Mamba Mentality: How I Play",
     author: "Kobe Bryant, Andrew D.Bernstein",
-    image: "./../assets/images/kobe.png",
+    image: "./assets/images/kobe.png",
     likes: 28407,
     liked: true,
     price: 29.99,
@@ -160,7 +160,7 @@ let books = [
   {
     name: "Atomic Habits",
     author: "James Clear",
-    image: "./../assets/images/atomic_habits.png",
+    image: "./assets/images/atomic_habits.png",
     likes: 1300,
     liked: true,
     price: 20.35,
@@ -197,7 +197,7 @@ let books = [
   {
     name: "World of Warcraft: Rise of the Horde",
     author: "Christie Golden",
-    image: "./../assets/images/wow.png",
+    image: "./assets/images/wow.png",
     likes: 890,
     liked: false,
     price: 19.99,
@@ -224,7 +224,7 @@ let books = [
   {
     name: "The Lord of the Rings",
     author: "J.R.R Tolkien",
-    image: "./../assets/images/lotro.png",
+    image: "./assets/images/lotro.png",
     likes: 1450,
     liked: true,
     price: 31.5,
@@ -246,7 +246,7 @@ let books = [
   {
     name: "I Am Football: Zlatan Ibrahimovic",
     author: "Zlatan Ibrahimovic",
-    image: "./../assets/images/zlatan.png",
+    image: "./assets/images/zlatan.png",
     likes: 920,
     liked: false,
     price: 17.5,
@@ -273,7 +273,7 @@ let books = [
   {
     name: "Zidane",
     author: "Frédéric Hermel",
-    image: "./../assets/images/zizou.png",
+    image: "./assets/images/zizou.png",
     likes: 1800,
     liked: true,
     price: 19.99,
